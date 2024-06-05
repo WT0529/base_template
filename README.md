@@ -1,18 +1,74 @@
-# Vue 3 + TypeScript + Vite
+<h1 align="center">项目基础框架模板</h1>
+<div align="center">
+<img alt="Static Badge" src="https://img.shields.io/badge/%F0%9F%A4%9E-useful-red">
+<img alt="Static Badge" src="https://img.shields.io/badge/pnpm-8.15.3-blue">
+<img alt="Static Badge" src="https://img.shields.io/badge/node-v16.14.0-blue">
+<img alt="Static Badge" src="https://img.shields.io/badge/typescript-%5E5.0.2-e28743">
+<img alt="Static Badge" src="https://img.shields.io/badge/License-MIT-e28743">
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+<br>
 
-## Recommended IDE Setup
+<i>项目基础框架已配置完成基础模块在此基础上开发项目!</i>
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+</div>
 
-## Type Support For `.vue` Imports in TS
+# 👀概览
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+- 🏡 [简介](#intro)
+- 🎄 [安装使用](#usege)
+- 📦 [部署](#deploy)
+- 🌼 [技术栈](#skill)
+- 🏳️‍🌈 [主要特性](#feature)
+- 🧬 [License](#license)
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+### [ 🏡简介](#intro)
 
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+项目采用 vue3 + vue-router + pinia(全局状态管理) + vue-i18n(国际化) + axios + eslint + windicss + vitest等搭建，可直接开发。
+
+### [🎄安装使用](#usege)
+
+```
+git clone
+pnpm i
+pnpm dev
+```
+
+### [📦部署](#deploy)
+
+```
+测试服务器地址：
+账号：
+密码：
+预览地址：
+```
+
+### [ 🌼技术栈:](#skill)
+
+- [vue3](https://cn.vuejs.org/)
+- [TypeScript](https://github.com/microsoft/TypeScript)
+- [vue-router](https://github.com/vuejs/vue-router-next)
+- [vite](https://github.com/vitejs/vite)
+- [Pinia](https://github.com/vuejs/pinia)
+- [Axios](https://github.com/axios/axios)
+- [vueuse](https://github.com/vueuse/vueuse)
+- [lodash-es](https://github.com/lodash/lodash)
+- [eslint](https://github.com/eslint/eslint)
+- [prettier](https://github.com/prettier/prettier)
+- [License](#license)
+
+### [🏳️‍🌈主要特性](#feature)
+
+* 🚀  使用`vite-plugin-pages` 自动构建路由；
+* 💥 使用`vite-plugin-vue-layouts` 进行页面布局；
+* 👍 使用`vite-plugin-svg-icons` 构建本地svg图标；
+* 🎨 使用`unplugin-icons`直接引用网络图标；
+* 🔀 使用`vite-plugin-mock` 本地mock数据；
+* ⚡️ 使用`unplugin-vue-components`自动加载组件；
+* 🌴 使用`unplugin-auto-import`自动加载依赖；
+* 💖 使用`vitest`构建单元测试；
+
+## [🧬License](#license)
+
+<img alt="Static Badge" src="https://img.shields.io/badge/License-MIT-e28743">
+
+
