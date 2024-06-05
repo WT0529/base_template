@@ -18,18 +18,26 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "types": [
+      "vite-plugin-pages/client",
+      "vite-plugin-vue-layouts/client",
+      "unplugin-icons/types/vue3",
+      "vitest",
+      "vitest/globals"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@assets/*": ["src/assets/*"],
+      "@types/*": ["src/types/*"],
+      "@stores/*": ["src/stores/*"],
+      "@api/*": ["src/api/*"],
+      "@pages/*": ["src/pages/*"],
+      "@layouts/*": ["src/layouts/*"],
+      "@utils/*": ["src/utils/*"]
+    }
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
-  "references": [{ "path": "./tsconfig.node.json" }],
-  "baseUrl": ".",
-  "path":{
-    "@/*":["src/*"],
-    "@assets/*":["src/assets/*"],
-    "@types/*":["src/types/*"],
-    "@stores/*":["src/stores/*"],
-    "@api/*":["src/api/*"],
-    "@pages/*":["src/pages/*"],
-    "@layouts/*":["src/layouts/*"],
-  }
+  "references": [{ "path": "./tsconfig.node.json" }]
 }

@@ -1,10 +1,16 @@
-import { createApp } from 'vue'
-import './style.css'
-// import VueI18n from 'vue-i18n'
-import App from './App.vue'
-import router from './router'
+import { createApp } from "vue";
+import "./style.css";
+import "virtual:windi.css";
+import "virtual:svg-icons-register";
 
-const Vue = createApp(App)
-// Vue.use(VueI18n)
-Vue.use(router)
-Vue.mount('#app')
+import App from "./App.vue";
+import i18n from "./locale";
+import router from "./router";
+import pinia from "./stores";
+// import { setGlobalOptions } from 'vue-request'
+
+const Vue = createApp(App);
+Vue.use(i18n);
+Vue.use(router);
+Vue.use(pinia);
+Vue.mount("#app");

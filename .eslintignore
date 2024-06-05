@@ -10,3 +10,5 @@ types
 *.css
 *.svg
 *.png
+src/auto-import.d.ts
+src/auto-components.d.ts
