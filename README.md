@@ -28,7 +28,7 @@
 ### [🎄安装使用](#安装使用)
 
 ```
-git clone https://github.com/hyc6446/base_template.git
+git clone https://github.com/WT0529/base_template.git
 pnpm i
 pnpm dev
 ```
