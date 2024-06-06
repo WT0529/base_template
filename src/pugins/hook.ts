@@ -2,10 +2,13 @@
 import { TOKEN_KEY } from "@/constant";
 
 export function useEnv() {
-  const { VITE_MODE, VITE_BASE_URL } = import.meta.env;
+  const { VITE_PORT, VITE_MODE,VITE_HOST, VITE_BASE_URL,VITE_PAGE_TITLE } = import.meta.env;
   return {
-    VITE_MODE,
+    VITE_PORT,
+    VITE_HOST,
+    VITE_PAGE_TITLE,
     VITE_BASE_URL,
+    VITE_MODE,
   };
 }
 

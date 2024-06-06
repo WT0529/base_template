@@ -48,3 +48,9 @@ export interface RestData<T> {
 //   post<T, P>(url: string, params?: T, axiosConfig?: AxiosHttpRequestConfig): Promise<P>;
 //   get<T, P>(url: string, params?: T, axiosConfig?: AxiosHttpRequestConfig): Promise<P>;
 // }
+
+export interface UserProperty {
+  name:string;
+  age:number;
+  height:number;
+}

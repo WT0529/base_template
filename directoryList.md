@@ -1,4 +1,5 @@
-|-- base*template
+```
+|-- baseTemplate //根目录
 |-- .env
 |-- .env.development
 |-- .env.production
@@ -13,7 +14,7 @@
 |-- auto-imports.d.ts
 |-- commitlint.config.js
 |-- components.d.ts
-|-- eslint.config.js
+|-- eslint.config.js 
 |-- index.html
 |-- package.json
 |-- pnpm-lock.yaml
@@ -22,8 +23,8 @@
 |-- tsconfig.json
 |-- tsconfig.node.json
 |-- vite.config.ts
-|-- windi.config.ts
-|-- .husky
+|-- windi.config.ts // windcss 配置项
+|-- .husky // husky git钩子
 | |-- *
 | |-- .gitignore
 | |-- applypatch-msg
@@ -114,3 +115,5 @@
 | |-- utils.d.ts
 |-- tests // 测试模块
 |-- demo.test.ts
+
+```

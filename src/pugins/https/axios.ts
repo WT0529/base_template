@@ -1,8 +1,6 @@
 import type {
-  AxiosError,
   AxiosInstance,
   AxiosRequestConfig,
-  AxiosResponse,
   CustomParamsSerializer,
 } from "axios";
 import Axios from "axios";
@@ -40,10 +38,10 @@ class CreateAxios {
     this.httpInterceptorsResponse();
   }
   /** token过期后，暂存待执行的请求 */
-  private static requests = [];
+  // private static requests = [];
 
   /** 防止重复刷新token */
-  private static isRefreshing = false;
+  // private static isRefreshing = false;
 
   /** 初始化配置对象 */
   private static initConfig: AxiosHttpRequestConfig = {};
@@ -80,14 +78,14 @@ class CreateAxios {
           return whiteList.find((url) => url === config.url)
             ? config
             : new Promise((resolve) => {
-                const data = getToken();
-                if (data) {
-                  config.headers!.Authorization = formatToken(data);
-                  resolve(config);
-                } else {
-                  resolve(config);
-                }
-              });
+              const data = getToken();
+              if (data) {
+                config.headers!.Authorization = formatToken(data);
+                resolve(config);
+              } else {
+                resolve(config);
+              }
+            });
         }
         return config;
       },
@@ -160,6 +158,8 @@ class CreateAxios {
           break;
       }
     }
+    console.log(message)
+
   }
   /**
    * 通用请求方法
@@ -213,7 +213,7 @@ class CreateAxios {
    */
   public post<T, P>(
     url: string,
-    params?: AxiosRequestConfig<P>,
+    params?: AxiosRequestConfig<T>,
     axiosConfig?: AxiosHttpRequestConfig,
   ): Promise<P> {
     return this.request<P>("post", url, params, axiosConfig);

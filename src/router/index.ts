@@ -1,11 +1,10 @@
 import { createRouter, createWebHashHistory } from "vue-router";
-import routers from "virtual:generated-pages";
 import { setupLayouts } from "virtual:generated-layouts";
+import routes from 'virtual:generated-pages'
 
 const router = createRouter({
   history: createWebHashHistory(),
-  // routes: setupLayouts(routers),
-  routes: routers,
+  routes: setupLayouts(routes),
 });
 
 export default router;
